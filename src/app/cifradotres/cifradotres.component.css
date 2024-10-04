@@ -1,0 +1,53 @@
+/* cifradotres.component.css */
+
+/* Contenedor principal */
+.app-container {
+    max-width: 400px; /* Ampliado para una mejor visualización */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333;
+    text-align: center; /* Centrado */
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Botones ocupan el ancho completo */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el texto cifrado */
+p {
+    text-align: center; /* Centrado */
+}

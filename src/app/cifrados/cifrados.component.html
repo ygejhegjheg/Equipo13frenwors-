@@ -1,0 +1,65 @@
+<div class="app-container">
+    <h2 class="title">Cifrado y Descifrado César</h2>
+    
+    <div class="columns-container">
+        <!-- Formulario de Cifrado -->
+        <div class="cifrado-container">
+            <h3>Cifrado</h3>
+            <form [formGroup]="cifradoForm" (ngSubmit)="manejarCifrado()">
+                <div class="form-group">
+                    <label for="mensaje">Mensaje a cifrar:</label>
+                    <input id="mensaje" formControlName="mensaje" placeholder="Escribe el mensaje" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="desplazamiento">Desplazamiento:</label>
+                    <input id="desplazamiento" formControlName="desplazamiento" type="number" placeholder="Número de desplazamiento" />
+                </div>
+                
+                <button type="submit">Cifrar</button>
+            </form>
+  
+            <div class="result-container">
+                <h4>Resultado del Cifrado:</h4>
+                <p>{{ resultadoCifrado }}</p>
+            </div>
+        </div>
+  
+        <!-- Formulario de Descifrado -->
+        <div class="descifrado-container">
+            <h3>Descifrado</h3>
+            <form [formGroup]="descifradoForm" (ngSubmit)="manejarDescifrado()">
+                <div class="form-group">
+                    <label for="mensajeCifrado">Mensaje a descifrar:</label>
+                    <input id="mensajeCifrado" formControlName="mensajeCifrado" placeholder="Escribe el mensaje" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="desplazamientoDelCifrado">Desplazamiento:</label>
+                    <input id="desplazamientoDelCifrado" formControlName="desplazamientoDelCifrado" type="number" placeholder="Número de desplazamiento" />
+                </div>
+                
+                <button type="submit">Descifrar</button>
+            </form>
+  
+            <div class="result-container">
+                <h4>Resultado del Descifrado:</h4>
+                <p>{{ resultadoDescifrado }}</p>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Botón para redirigir a Cifrado Escítala -->
+    <div class="redirect-button" style="margin-top: 20px;">
+        <button (click)="redirigirEscitala()">Cifrado Escítala</button>
+    </div>
+  
+    <!-- Botón para redirigir a Tarea 2 -->
+    <div class="redirect-button" style="margin-top: 20px;">
+        <button (click)="redirigirTarea2()">Tarea 3 franword Angular </button>
+    </div>
+
+    
+
+  </div>
+  

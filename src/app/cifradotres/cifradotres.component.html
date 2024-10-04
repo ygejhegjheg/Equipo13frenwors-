@@ -1,0 +1,26 @@
+<div class="app-container">
+  <h2>Cifrado 3 SHA-1 (CifradoTres)</h2>
+
+  <!-- Formulario para cifrar datos -->
+  <form (ngSubmit)="cifrarDatos()">
+      <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+      </div>
+      <div>
+          <label for="domicilio">Domicilio:</label>
+          <input type="text" id="domicilio" [(ngModel)]="domicilio" name="domicilio" required>
+      </div>
+      <button type="submit">Cifrar</button>
+  </form>
+
+  <!-- Mostrar texto cifrado -->
+  <div *ngIf="textoCifradoNombre || textoCifradoDomicilio">
+      <h3>Texto Cifrado:</h3>
+      <p><strong>Nombre Cifrado:</strong> {{ textoCifradoNombre }}</p>
+      <p><strong>Domicilio Cifrado:</strong> {{ textoCifradoDomicilio }}</p>
+  </div>
+
+  <!-- Botón para regresar -->
+  <button (click)="regresar()">Regresar</button>
+</div>

@@ -1,0 +1,47 @@
+<div class="app-container">
+  <h1 class="title">Cifrado Escitala</h1>
+
+  <div class="columns-container">
+    <div class="cifrado-container">
+      <h3>Cifrado</h3>
+      <input
+        type="text"
+        [(ngModel)]="mensajeCifrado"
+        placeholder="Mensaje a cifrar"
+      />
+      <input
+        type="text"
+        [(ngModel)]="claveCifrado"
+        placeholder="Clave (número de columnas)"
+      />
+      <button (click)="manejarCifrado()">Cifrar</button>
+      <div>
+        <h4>Resultado del Cifrado:</h4>
+        <span>{{ resultadoCifrado }}</span>
+      </div>
+    </div>
+
+    <div class="descifrado-container">
+      <h3>Descifrado</h3>
+      <input
+        type="text"
+        [(ngModel)]="mensajeDescifrado"
+        placeholder="Mensaje a descifrar"
+      />
+      <input
+        type="text"
+        [(ngModel)]="claveDescifrado"
+        placeholder="Clave (número de columnas)"
+      />
+      <button (click)="manejarDescifrado()">Descifrar</button>
+      <div>
+        <h4>Resultado del Descifrado:</h4>
+        <span>{{ resultadoDescifrado }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button (click)="navigateBack()">Regresar</button>
+  </div>
+</div>

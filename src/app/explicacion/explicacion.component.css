@@ -1,0 +1,55 @@
+/* Centrando el contenido en la página */
+.contenido {
+  max-width: 800px;
+  margin: 50px auto; /* Centra horizontalmente y da margen superior e inferior */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #e0f7fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ul li strong {
+  color: #00796b;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,42 @@
+<div class="app-container">
+  <h2>Cifrado 2 LUC (Lucas-based public key cryptosystem)</h2>
+
+  <!-- Formulario para cifrar datos -->
+  <form (ngSubmit)="cifrarDatos()">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+    </div>
+    <div>
+      <label for="domicilio">Domicilio:</label>
+      <input type="text" id="domicilio" [(ngModel)]="domicilio" name="domicilio" required>
+    </div>
+    <button type="submit">Cifrar</button>
+  </form>
+
+  <!-- Mostrar texto cifrado -->
+  <div *ngIf="textoCifradoNombre || textoCifradoDomicilio">
+    <h3>Texto Cifrado:</h3>
+    <p><strong>Nombre Cifrado:</strong> {{ textoCifradoNombre }}</p>
+    <p><strong>Domicilio Cifrado:</strong> {{ textoCifradoDomicilio }}</p>
+  </div>
+
+  <!-- Formulario para descifrar datos -->
+  <h2>Descifrar Mensaje</h2>
+  <form (ngSubmit)="descifrarDatos()">
+    <div>
+      <label for="cifrado">Texto Cifrado para Descifrar:</label>
+      <input type="text" id="cifrado" [(ngModel)]="textoCifradoParaDescifrar" name="cifrado" required>
+    </div>
+    <button type="submit">Descifrar</button>
+  </form>
+
+  <!-- Mostrar texto descifrado -->
+  <div *ngIf="textoDescifrado">
+    <h3>Texto Descifrado:</h3>
+    <p>{{ textoDescifrado }}</p>
+  </div>
+
+  <!-- Botón de regresar -->
+  <button (click)="regresar()">Regresar</button>
+</div>

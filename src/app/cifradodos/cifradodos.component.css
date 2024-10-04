@@ -1,0 +1,96 @@
+/* Contenedor principal */
+.app-container {
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 50px auto; /* Centrar el contenedor en la pantalla */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Títulos principales */
+h2 {
+  text-align: center;
+  font-size: 24px; /* Tamaño aumentado */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Reduce el margen inferior */
+}
+
+/* Contenedor de columnas para cifrado y descifrado */
+.columns-container {
+  display: flex; /* Flex para alinear horizontalmente */
+  justify-content: space-between; /* Espacio entre columnas */
+  gap: 20px; /* Espacio entre formularios */
+}
+
+/* Contenedor individual de cada columna (cifrado o descifrado) */
+.cifrado-container,
+.descifrado-container {
+  padding: 20px; /* Espaciado interno aumentado */
+  background-color: #f7f9fc;
+  border: 1px solid #ced4da; /* Borde alrededor */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos en los contenedores de cifrado y descifrado */
+h3 {
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+/* Etiquetas y campos de entrada */
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Para incluir padding y border en el width total */
+}
+
+/* Estilo para los botones de cada sección */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%; /* Botones ocupan el ancho completo */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado del cifrado y descifrado */
+p {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f1f3f5;
+  border-radius: 4px;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px; /* Espacio superior para resultados */
+}
+
+/* Botón de regresar (flotante en la esquina inferior) */
+.app-container button:nth-of-type(2) {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #343a40;
+}
+
+.app-container button:nth-of-type(2):hover {
+  background-color: #1d2124;
+}
